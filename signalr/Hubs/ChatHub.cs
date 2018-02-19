@@ -9,5 +9,17 @@ namespace signalr.Hubs
         {
             return Clients.All.InvokeAsync("Send", message);
         }
+
+        public Task SendGroup(string groupName, string message)
+        {
+            return Clients.Group(groupName).InvokeAsync("Send", message);
+        }
+
+        public Task Register(string groupName, string key)
+        {
+            Groups.AddAsync(Context.ConnectionId, groupName);
+
+            return Clients.Group(groupName).InvokeAsync("Send", $"{groupName}: registered");
+        }
     }
 }

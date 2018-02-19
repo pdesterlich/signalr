@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/Library/Caches/Rider2017.3/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_signalr.-760755635.00" t="ExcludeRecursive" />
-    <e p="$PROJECT_DIR$" t="IncludeFlat">
+    <e p="C:\Users\Phelipe\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_signalr.-36755201.00" t="ExcludeRecursive" />
+    <e p="E:\Progetti\Test\signalr" t="IncludeFlat">
       <e p="api" t="IncludeRecursive">
         <e p="api.csproj" t="IncludeRecursive" />
+        <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
@@ -24,6 +25,7 @@
       </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="signalr" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
