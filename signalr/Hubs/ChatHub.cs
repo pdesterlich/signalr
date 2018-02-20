@@ -17,8 +17,11 @@ namespace signalr.Hubs
 
         public Task Register(string groupName, string key)
         {
+            // sostituire con controllo effettivo groupname / key
+            if (key != "1234")
+                Clients.User(Context.ConnectionId).InvokeAsync("Send", "non autorizzato");
+            
             Groups.AddAsync(Context.ConnectionId, groupName);
-
             return Clients.Group(groupName).InvokeAsync("Send", $"{groupName}: registered");
         }
     }
